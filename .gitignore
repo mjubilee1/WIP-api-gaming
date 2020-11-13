@@ -1,0 +1,15 @@
+# Binaries, plugins, libs
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.so
+.vscode
+
+# Testing
+*.test
+*.tmp
+
+# Env
+.env
+.env.staging

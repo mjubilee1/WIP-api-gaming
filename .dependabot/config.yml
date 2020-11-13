@@ -1,0 +1,11 @@
+version: 1
+update_configs:
+  # Keep package.json (& lockfiles) up to date as soon as
+  # new versions are published to the registry
+  - package_manager: "go:modules"
+    directory: "/"
+    update_schedule: "daily"
+  # Keep Github Actions up to date, batching pull requests daily
+  - package_manager: "github_actions"
+    directory: "/"
+    update_schedule: "daily"
